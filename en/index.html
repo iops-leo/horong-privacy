@@ -45,7 +45,7 @@
     <a href="../">한국어</a> · <strong>English</strong>
   </div>
 
-  <p class="meta">Effective 25 July 2026 · Version 1.3 (first effective 2 July 2026)</p>
+  <p class="meta">Effective 13 August 2026 · Version 1.4 (first effective 2 July 2026)</p>
 
   <div class="card">
     <strong>In short:</strong> Horong does not collect personally identifying
@@ -53,7 +53,8 @@
     are stored only on your own device. For the purpose of improving the app,
     <strong>anonymous usage statistics</strong> (Firebase Analytics) are collected, and
     when you choose to watch a <strong>rewarded ad</strong> (Google AdMob),
-    non-identifying information such as an advertising ID is processed.
+    non-identifying information such as an advertising ID is processed. If the app crashes,
+    a <strong>crash report</strong> (Firebase Crashlytics) is sent so we can find the cause.
   </div>
 
   <h2>1. Personal information we collect</h2>
@@ -81,6 +82,13 @@
   personally identifying information such as a name, email address, or contact details.
   For how Firebase processes data, see the
   <a href="https://firebase.google.com/support/privacy">Firebase privacy documentation</a>.</p>
+
+  <p>Horong uses <strong>Google Firebase Crashlytics</strong> to find the cause when the app
+  shuts down unexpectedly. The information sent is limited to <strong>the technical detail
+  needed to reproduce the problem</strong> — where the error occurred (a stack trace), the
+  device model, the operating system version, and the app version. It never includes
+  personally identifying information such as a name, email address, or contact details, and
+  we use it only to fix the app, never for advertising.</p>
 
   <p>Horong uses <strong>Google AdMob</strong> to provide rewarded ads. Ads are never shown
   to you unprompted — they appear <strong>only when you yourself choose "watch an ad for a
