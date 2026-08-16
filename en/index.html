@@ -45,7 +45,7 @@
     <a href="../">한국어</a> · <strong>English</strong>
   </div>
 
-  <p class="meta">Effective 13 August 2026 · Version 1.4 (first effective 2 July 2026)</p>
+  <p class="meta">Effective 16 August 2026 · Version 1.5 (first effective 2 July 2026)</p>
 
   <div class="card">
     <strong>In short:</strong> Horong does not collect personally identifying
@@ -55,12 +55,17 @@
     when you choose to watch a <strong>rewarded ad</strong> (Google AdMob),
     non-identifying information such as an advertising ID is processed. If the app crashes,
     a <strong>crash report</strong> (Firebase Crashlytics) is sent so we can find the cause.
+    If you open the leaderboard yourself and sign in, your game profile and score are stored by
+    <strong>Google Play Games</strong> — nothing is sent unless you sign in.
   </div>
 
   <h2>1. Personal information we collect</h2>
   <p>Horong <strong>does not directly collect personally identifying information</strong>
-  such as your name, email address, phone number, or precise location. There is no sign-up
-  and no login. For non-identifying information processed by third-party services
+  such as your name, email address, phone number, or precise location. The app itself has no
+  sign-up. Signing in to the leaderboard (Google Play Games) is optional and happens
+  <strong>only when you open the leaderboard yourself</strong>; even then, Horong does not
+  receive or store the name or email address on your Google account (see section 3).
+  For non-identifying information processed by third-party services
   (advertising and analytics), see section 3.</p>
 
   <h2>2. Data stored on your device</h2>
@@ -99,11 +104,36 @@
   <a href="https://policies.google.com/technologies/ads">Google Advertising Technologies</a>
   page.</p>
 
+  <p>Horong uses <strong>Google Play Games Services</strong> for the leaderboard in the
+  "Flame Rush" challenge mode. This is <strong>entirely optional</strong>: the sign-in prompt
+  appears only when you tap "See today's rankings" yourself — never when the app starts — and
+  nothing is sent if you do not sign in.</p>
+  <ul>
+    <li><strong>What is sent.</strong> Your score (the number of lanterns lit) from a single
+        "Today's Flame" run, together with the game profile Google Play Games assigns you
+        (gamer ID, display name, avatar). That profile is managed by Google, and you can change
+        or hide it at any time in the Play Games app.</li>
+    <li><strong>Who can see it.</strong> Your submitted score and the display name and avatar
+        on your game profile <strong>are shown to other players viewing the same
+        leaderboard.</strong> That is the purpose of a leaderboard.</li>
+    <li><strong>What is not sent.</strong> The name and email address on your Google account
+        are not passed to Horong and are not stored by us. Records from other modes — Journey,
+        the daily lantern — are never submitted; only "Today's Flame" goes to the
+        leaderboard.</li>
+    <li><strong>How to withdraw.</strong> In the Google Play Games app under Settings you can
+        disconnect Horong or delete its game data. After that, nothing is sent again unless you
+        choose to sign in.</li>
+  </ul>
+  <p>For details, see the <a href="https://policies.google.com/privacy">Google Privacy
+  Policy</a> and the
+  <a href="https://support.google.com/googleplay/answer/6362393">Google Play Games help
+  pages</a>.</p>
+
   <p>In-app purchases (support and decorative items) are handled by the
   <strong>Google Play billing system</strong>. Horong has no access to your payment details,
   such as card numbers.</p>
 
-  <p>We do not send data to any other third-party service, including social logins. The
+  <p>We do not send data to any other third-party service. The
   "share" feature simply hands text to an app you choose yourself (a messenger, for example);
   Horong does not collect what you share.</p>
 
@@ -113,7 +143,8 @@
   <ul>
     <li><strong>Legal basis.</strong> Analytics and advertising are carried out on the basis
         of your <strong>consent</strong>, requested through Google's consent form the first
-        time the app runs.</li>
+        time the app runs. Leaderboard processing rests on the separate, explicit consent you
+        give by signing in to Google Play Games when you open the leaderboard.</li>
     <li><strong>Withdrawing consent.</strong> You can change your choice at any time in the
         app under <em>Settings › Ad privacy settings</em>. If you decline, the advertising
         SDK is not initialised at all.</li>
@@ -133,8 +164,10 @@
   that no personally identifying information is collected.</p>
 
   <h2>6. Children's privacy</h2>
-  <p>Horong is suitable for all ages. Because we do not collect personal information, we do
-  not collect personal information from children either.</p>
+  <p>Horong is suitable for all ages. The app itself collects no personal information, and
+  leaderboard sign-in is optional. Google Play Games accounts are governed by Google's own age
+  policies; guardians can restrict a child's use of game services through Family Link and
+  similar tools.</p>
 
   <h2>7. Contact</h2>
   <p>For questions about this privacy policy, please contact us by email.</p>
@@ -143,7 +176,7 @@
   </ul>
 
   <footer>
-    This English page mirrors version 1.3 of the Korean policy, with section 4 added for
+    This English page mirrors version 1.5 of the Korean policy, with section 4 added for
     users in the EEA and the United Kingdom.
     The <a href="../">Korean original</a> also carries the full revision history.
   </footer>
