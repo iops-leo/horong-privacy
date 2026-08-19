@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horong — Account &amp; Data Deletion</title>
+<link rel="alternate" hreflang="ko" href="../">
+<style>
+  :root { --bg: #FFF8EF; --ink: #4A3B2E; --accent: #C77B3F; --soft: #8A7360; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    line-height: 1.7; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+  h1 { color: var(--accent); font-size: 1.6rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.2em; border-bottom: 1px solid #E8D9C5; padding-bottom: 6px; }
+  .meta { color: var(--soft); font-size: 0.9rem; }
+  .card { background: #FFFDF9; border: 1px solid #EFE3D0; border-radius: 12px; padding: 16px 20px; margin: 1.2em 0; }
+  a { color: var(--accent); }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #EFE3D0; vertical-align: top; }
+  th { color: var(--soft); font-weight: 600; font-size: 0.92rem; }
+  ol { padding-left: 1.2em; }
+  footer { margin-top: 3em; color: var(--soft); font-size: 0.85rem; }
+  .lang { display: flex; align-items: center; gap: 10px; margin: 4px 0 8px; padding: 12px 16px;
+    background: #FFFDF9; border: 1px solid #EFE3D0; border-radius: 12px; font-size: 0.92rem; }
+  .lang span { color: var(--soft); font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+  <h1>🏮 Account &amp; data deletion</h1>
+
+  <div class="lang">
+    <span>Language</span>
+    <a href="../">한국어</a> · <strong>English</strong>
+  </div>
+
+  <p class="meta">
+    App: <strong>Horong – Akari Light-up Logic Puzzle</strong> (<code>com.leo.horong</code>) ·
+    Developer: <strong>ShortsStory Studio</strong>
+  </p>
+
+  <div class="card">
+    <strong>In short:</strong> Horong has no sign-up. Data is stored on our server
+    <strong>only if you joined the Lantern Rankings</strong>, and you can
+    <strong>delete it from inside the app</strong>. Please do that <em>before</em>
+    uninstalling — uninstalling alone leaves the ranking data on the server.
+  </div>
+
+  <h2>Delete in the app (recommended)</h2>
+  <ol>
+    <li>Open Horong.</li>
+    <li>Tap <strong>Settings</strong> (⚙) at the top right of the home screen.</li>
+    <li>Under <strong>About</strong>, tap <strong>“Delete ranking account”</strong>.</li>
+    <li>Confirm with <strong>“Delete”</strong>. Removal is immediate.</li>
+  </ol>
+  <p>
+    The “Delete ranking account” item appears <strong>only if you joined the Lantern
+    Rankings</strong>. If you never joined, there is nothing stored on our server.
+  </p>
+
+  <h2>Request by email</h2>
+  <p>
+    If you already uninstalled the app or cannot use the steps above, email
+    <a href="mailto:support@viralpulse.net?subject=Horong%20account%20deletion%20request">support@viralpulse.net</a>.
+    Please include the <strong>profile name and #number</strong> shown on the rankings
+    (for example “Warm Horongi #1234”) so we can identify the record.
+    Requests are handled <strong>within 30 days</strong>.
+  </p>
+
+  <h2>What is deleted / what is kept</h2>
+  <table>
+    <tr><th>Data</th><th>Handling</th></tr>
+    <tr>
+      <td>Anonymous account identifier (uid)</td>
+      <td><strong>Deleted</strong> — the account itself is removed</td>
+    </tr>
+    <tr>
+      <td>Profile (name combination, avatar, region)</td>
+      <td><strong>Deleted</strong></td>
+    </tr>
+    <tr>
+      <td>Lantern points, boards finished, league tier</td>
+      <td><strong>Deleted</strong></td>
+    </tr>
+    <tr>
+      <td>Your row in the weekly rankings</td>
+      <td><strong>Deleted</strong> (last 4 weeks). Older weekly records are
+      automatically removed after at most <strong>90 days</strong></td>
+    </tr>
+    <tr>
+      <td>Your entries in the “recent clears” feed</td>
+      <td><strong>Deleted</strong>; any remaining entries are automatically removed after at most <strong>90 days</strong></td>
+    </tr>
+    <tr>
+      <td>On-device game progress (Journey, daily, settings)</td>
+      <td>Stored only on your device, so it is <strong>removed when you uninstall</strong>.
+      Deleting the ranking account does not touch it — kept separate on purpose so you
+      don't lose your play history</td>
+    </tr>
+    <tr>
+      <td>Anonymous usage statistics and crash reports (Firebase)</td>
+      <td>Non-identifying aggregate data, governed by Google's own retention policies</td>
+    </tr>
+  </table>
+
+  <h2>Contact</h2>
+  <ul>
+    <li>Email: <a href="mailto:support@viralpulse.net">support@viralpulse.net</a></li>
+    <li>Privacy policy: <a href="../../en/">https://iops-leo.github.io/horong-privacy/en/</a></li>
+  </ul>
+
+  <footer>Last updated: 19 August 2026</footer>
+</main>
+</body>
+</html>

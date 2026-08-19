@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>호롱(Horong) 계정·데이터 삭제 요청</title>
+<link rel="alternate" hreflang="en" href="./en/">
+<style>
+  :root { --bg: #FFF8EF; --ink: #4A3B2E; --accent: #C77B3F; --soft: #8A7360; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    line-height: 1.7; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+  h1 { color: var(--accent); font-size: 1.6rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.2em; border-bottom: 1px solid #E8D9C5; padding-bottom: 6px; }
+  .meta { color: var(--soft); font-size: 0.9rem; }
+  .card { background: #FFFDF9; border: 1px solid #EFE3D0; border-radius: 12px; padding: 16px 20px; margin: 1.2em 0; }
+  a { color: var(--accent); }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #EFE3D0; vertical-align: top; }
+  th { color: var(--soft); font-weight: 600; font-size: 0.92rem; }
+  ol { padding-left: 1.2em; }
+  footer { margin-top: 3em; color: var(--soft); font-size: 0.85rem; }
+  .lang { display: flex; align-items: center; gap: 10px; margin: 4px 0 8px; padding: 12px 16px;
+    background: #FFFDF9; border: 1px solid #EFE3D0; border-radius: 12px; font-size: 0.92rem; }
+  .lang span { color: var(--soft); font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+  <h1>🏮 계정·데이터 삭제 요청</h1>
+
+  <div class="lang">
+    <span>언어</span>
+    <strong>한국어</strong> · <a href="./en/">English</a>
+  </div>
+
+  <p class="meta">
+    앱: <strong>호롱 – 아카리 라이트업 논리 퍼즐</strong>(<code>com.leo.horong</code>) ·
+    개발자: <strong>쇼츠스토리 스튜디오</strong>
+  </p>
+
+  <div class="card">
+    <strong>요약:</strong> 호롱은 회원가입이 없습니다. 서버에 데이터가 저장되는 건
+    <strong>등불 순위에 직접 참여했을 때뿐</strong>이고, 그 데이터는
+    <strong>앱 안에서 직접 삭제</strong>할 수 있습니다. 앱을 지우기 <em>전에</em>
+    아래 절차를 이용해 주세요 — 앱만 삭제하면 서버의 순위 데이터는 남습니다.
+  </div>
+
+  <h2>앱에서 삭제하기 (권장)</h2>
+  <ol>
+    <li>호롱을 엽니다.</li>
+    <li>홈 우상단 <strong>설정</strong>(⚙) 을 누릅니다.</li>
+    <li>아래 <strong>정보</strong> 항목에서 <strong>「순위 계정 삭제」</strong>를 누릅니다.</li>
+    <li>확인 창에서 <strong>「지울래요」</strong>를 누르면 즉시 삭제됩니다.</li>
+  </ol>
+  <p>
+    「순위 계정 삭제」 항목은 <strong>등불 순위에 참여한 경우에만</strong> 보입니다.
+    참여한 적이 없다면 서버에 지울 데이터가 없습니다.
+  </p>
+
+  <h2>이메일로 요청하기</h2>
+  <p>
+    앱을 이미 삭제했거나 위 절차를 쓸 수 없다면
+    <a href="mailto:support@viralpulse.net?subject=%ED%98%B8%EB%A1%B1%20%EA%B3%84%EC%A0%95%20%EC%82%AD%EC%A0%9C%20%EC%9A%94%EC%B2%AD">support@viralpulse.net</a>
+    으로 요청해 주세요. 확인을 위해 <strong>순위표에 표시되던 프로필 이름과 #번호</strong>
+    (예: 「따뜻한 호롱이 #1234」)를 함께 적어 주시면 빠릅니다.
+    요청은 접수 후 <strong>30일 이내</strong>에 처리합니다.
+  </p>
+
+  <h2>삭제되는 데이터 / 보관되는 데이터</h2>
+  <table>
+    <tr><th>데이터</th><th>처리</th></tr>
+    <tr>
+      <td>익명 계정 식별자(uid)</td>
+      <td><strong>삭제</strong> — 계정 자체가 사라집니다</td>
+    </tr>
+    <tr>
+      <td>프로필(이름 조합·아바타·지역)</td>
+      <td><strong>삭제</strong></td>
+    </tr>
+    <tr>
+      <td>등불 점수·완주 판 수·리그 단계</td>
+      <td><strong>삭제</strong></td>
+    </tr>
+    <tr>
+      <td>주간 순위표의 내 줄</td>
+      <td><strong>삭제</strong>(최근 4주치) — 그보다 오래된 주차 기록은
+      최대 <strong>90일</strong> 뒤 자동 삭제됩니다</td>
+    </tr>
+    <tr>
+      <td>「최근 클리어」 피드의 내 기록</td>
+      <td><strong>삭제</strong> — 남는 항목도 최대 <strong>90일</strong> 뒤 자동 삭제</td>
+    </tr>
+    <tr>
+      <td>기기 안의 게임 진행(여정·데일리·설정)</td>
+      <td>기기에만 있으므로 <strong>앱을 삭제하면 함께 삭제</strong>됩니다.
+      순위 계정 삭제로는 지워지지 않습니다(플레이 기록을 잃지 않도록 일부러 나눠 뒀습니다)</td>
+    </tr>
+    <tr>
+      <td>익명 이용 통계·오류 보고(Firebase)</td>
+      <td>개인을 식별하지 않는 집계 데이터로, Google의 보관 정책을 따릅니다</td>
+    </tr>
+  </table>
+
+  <h2>문의</h2>
+  <ul>
+    <li>이메일: <a href="mailto:support@viralpulse.net">support@viralpulse.net</a></li>
+    <li>개인정보처리방침: <a href="../">https://iops-leo.github.io/horong-privacy/</a></li>
+  </ul>
+
+  <footer>최종 갱신: 2026년 8월 19일</footer>
+</main>
+</body>
+</html>
