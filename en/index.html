@@ -45,7 +45,7 @@
     <a href="../">한국어</a> · <strong>English</strong>
   </div>
 
-  <p class="meta">Effective 16 August 2026 · Version 1.5 (first effective 2 July 2026)</p>
+  <p class="meta">Effective 19 August 2026 · Version 1.6 (first effective 2 July 2026)</p>
 
   <div class="card">
     <strong>In short:</strong> Horong does not collect personally identifying
@@ -56,7 +56,10 @@
     non-identifying information such as an advertising ID is processed. If the app crashes,
     a <strong>crash report</strong> (Firebase Crashlytics) is sent so we can find the cause.
     If you open the leaderboard yourself and sign in, your game profile and score are stored by
-    <strong>Google Play Games</strong> — nothing is sent unless you sign in.
+    <strong>Google Play Games</strong> — nothing is sent unless you sign in. If you choose to
+    join the <strong>Lantern Rankings</strong>, an anonymous identifier, the profile you picked
+    from our preset lists, and your score are stored on <strong>Horong's own server</strong>,
+    and you can delete all of it from Settings at any time.
   </div>
 
   <h2>1. Personal information we collect</h2>
@@ -129,6 +132,41 @@
   <a href="https://support.google.com/googleplay/answer/6362393">Google Play Games help
   pages</a>.</p>
 
+  <p>Horong uses <strong>a server we operate ourselves</strong> (a Firestore database on
+  Google Firebase, hosted in the Seoul, South Korea region) for the <strong>Lantern
+  Rankings</strong> in the challenge modes — the weekly league, the recent-clears feed and the
+  per-country totals. This is <strong>entirely optional</strong>: it begins only when you open
+  the rankings and tap "create a profile" yourself. Before that, nothing is stored on the
+  server.</p>
+  <ul>
+    <li><strong>What is stored.</strong> An <strong>anonymous identifier</strong> that stands
+        in for an account (a random string, not linked to your Google account or device), the
+        <strong>profile you chose</strong> (index numbers into Horong's preset adjective and
+        noun lists, a distinguishing number, and an avatar colour and shape), your
+        <strong>lantern points</strong>, the number of boards you have finished, your league
+        tier, and the time you last finished a board.</li>
+    <li><strong>Country is optional.</strong> The default is "don't show". A country code
+        (for example KR) is stored only if you pick one yourself. We do not measure your
+        location, and precise location is never collected.</li>
+    <li><strong>Names are not free text.</strong> There is no field to type into, and the
+        server stores list <strong>indices</strong> rather than strings — which is why the same
+        profile appears in each viewer's own language.</li>
+    <li><strong>Who can see it.</strong> Your profile, avatar, points, finished-board count and
+        country (if you chose one) <strong>are shown to other players viewing the same
+        rankings.</strong> That is the purpose of a ranking.</li>
+    <li><strong>What is not sent.</strong> Your name, email address, phone number or Google
+        account details; precise location; and records from other modes such as Journey or the
+        daily lantern.</li>
+    <li><strong>How to delete it.</strong> Use <strong>Settings › Delete ranking account</strong>
+        in the app to remove your profile, points, recent clears and the anonymous account
+        itself. ⚠️ <strong>Uninstalling the app does not delete this server-side data</strong> —
+        please use that menu before uninstalling. If anything remains, email us at the address
+        in section 7 and we will remove it.</li>
+    <li><strong>Retention.</strong> Ranking data is kept until you delete it. It is used only to
+        display the rankings; it is never used for advertising, and it is never sold or passed
+        to a third party.</li>
+  </ul>
+
   <p>In-app purchases (support and decorative items) are handled by the
   <strong>Google Play billing system</strong>. Horong has no access to your payment details,
   such as card numbers.</p>
@@ -150,12 +188,13 @@
         SDK is not initialised at all.</li>
     <li><strong>Your rights.</strong> You have the right to access, rectify, erase, and port
         your data, to restrict or object to processing, and to lodge a complaint with your
-        national supervisory authority. Because Horong holds no account and stores your
-        progress only on your device, uninstalling the app removes everything we could hold
-        about you; for anything processed by Google, please use the links in section 3.</li>
-    <li><strong>Retention.</strong> We do not operate a server that stores your data.
-        Retention of anonymous analytics and advertising data is governed by Google's own
-        policies.</li>
+        national supervisory authority. Your game progress lives only on your device, so
+        uninstalling removes it. The one exception is the Lantern Rankings: if you joined,
+        delete that data from <em>Settings › Delete ranking account</em> before uninstalling,
+        or email us. For anything processed by Google, please use the links in section 3.</li>
+    <li><strong>Retention.</strong> The only data we hold on a server of our own is the Lantern
+        Rankings data described in section 3, kept until you delete it. Retention of anonymous
+        analytics and advertising data is governed by Google's own policies.</li>
   </ul>
 
   <h2>5. Future changes</h2>
@@ -164,8 +203,10 @@
   that no personally identifying information is collected.</p>
 
   <h2>6. Children's privacy</h2>
-  <p>Horong is suitable for all ages. The app itself collects no personal information, and
-  leaderboard sign-in is optional. Google Play Games accounts are governed by Google's own age
+  <p>Horong is suitable for all ages. The app itself collects no personally identifying
+  information, and taking part in the rankings is optional. Names in the Lantern Rankings are
+  combinations chosen from preset lists rather than free text, so there is no field in which a
+  child could reveal a real name or contact detail. Google Play Games accounts are governed by Google's own age
   policies; guardians can restrict a child's use of game services through Family Link and
   similar tools.</p>
 
@@ -176,7 +217,7 @@
   </ul>
 
   <footer>
-    This English page mirrors version 1.5 of the Korean policy, with section 4 added for
+    This English page mirrors version 1.6 of the Korean policy, with section 4 added for
     users in the EEA and the United Kingdom.
     The <a href="../">Korean original</a> also carries the full revision history.
   </footer>
